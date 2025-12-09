@@ -26,7 +26,7 @@ export default function Login() {
 
     if (res?.access_token) {
       localStorage.setItem("token", res.access_token);
-      setTimeout(() => router.push("/admin/dashboard"), 1200);
+      setTimeout(() => router.push("/admin/dashboard"), 1000);
     } else {
       alert("Invalid login");
       setLoading(false);
